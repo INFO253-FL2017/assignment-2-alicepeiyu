@@ -1,8 +1,2 @@
 flask==0.12.2
 requests==2.18.4
-
-export INFO253_MAILGUN_USER="api"
-export INFO253_MAILGUN_PASSWORD="key-555066f7920e711f2ecd127b35d3cf20"
-export INFO253_MAILGUN_FROM_EMAIL="postmaster@sandboxc89def7eec564abe8eb3f1ebf98774a8.mailgun.org"
-export INFO253_MAILGUN_TO_EMAIL="b95302106@gmail.com"
-export INFO253_MAILGUN_DOMAIN="sandboxc89def7eec564abe8eb3f1ebf98774a8.mailgun.org"
