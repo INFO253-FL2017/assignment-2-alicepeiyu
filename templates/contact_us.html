@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  
+        <header>
+<nav class="nav nav-masthead">
+                <a class="nav-link active" href="./">Home</a>
+                <a class="nav-link" href="./contact">Contact us</a>
+                <a class="nav-link" href="./about">About us</a>
+        </nav>
+        
+    </header>
+  <style>
+
+body {
+  height: 100%;
+  background-color: #F0F8FF;
+}
+body {
+  color: #A9A9A9;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1 {
+  color:#008B8B;
+
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+  </style>
+  
+  <body>
+
+    <div id="response">
+    {% for notification in notifications %}
+    {{ notification }}
+    {% endfor %}
+    <br>
+    </div>
+
+        <form id="contactus" action="/contact" method="POST" onsubmit="return validateForm()">
+          <lable for="name">Name: </lable>
+          <input type="text" id="name" name="name" required><br/>
+          <lable for="subject">Subject: </lable>
+          <input type="text" id="subject" name="subject" required><br/>
+          <lable for="email">Email: </lable>
+          <input type="email" id="email" name="email" ><br/>
+          <lable for="message">Message: </lable>
+          <input type="text" id="message"  name="message" required><br/>
+          <input type="submit" id="submit"  name="submit" value="Submit" >
+        </form>
+        <script src="static/js/script.js"></script>
+
+      
+
+<footer class="container-fluid bg-4 text-center">
+  <p>Posted by: Alice Yang</p>
+  <p>Contact information: <a href="aliceyang@berkeley.edu">
+  aliceyang@berkeley.edu</a>.</p>
+</footer>
+  </body>
+</html>
+  
+	
